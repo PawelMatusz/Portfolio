@@ -1,0 +1,31 @@
+// @media (prefers-color-scheme: dark) {
+//   body {
+//     color: #eee;
+//     background: #121212;
+//   }
+
+//   body a {
+//     color: #809fff;
+//   }
+// }
+.wrapper {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+html {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}

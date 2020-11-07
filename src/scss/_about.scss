@@ -1,0 +1,32 @@
+.about {
+  width: 100%;
+  display: flex;
+  flex: 0;
+  justify-content: space-between;
+  align-items: center;
+  &__container {
+    display: flex;
+  }
+  &__description {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    &-heading {
+      font-size: 3.3rem;
+    }
+    &-paragraph {
+      font-size: 1.3rem;
+      margin-top: 2.5rem;
+      line-height: 2rem;
+    }
+    &-link {
+      position: relative;
+      border: 1px solid #000;
+      padding: 0.6rem 2.5rem;
+      border-radius: 10px;
+      margin-top: 3.1rem;
+    }
+  }
+}
