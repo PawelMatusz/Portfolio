@@ -491,8 +491,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
   font-family: "Roboto Mono", monospace;
   font-weight: 700;
 }
@@ -500,6 +499,10 @@ h6 {
 img {
   max-width: 100%;
   height: auto;
+}
+
+a:hover {
+  opacity: 0.8;
 }
 
 .stack {
@@ -655,8 +658,9 @@ img {
 .contact__social {
   display: flex;
   flex-direction: column;
+  margin-right: 18rem;
 }
-.contact__social-link:not(:first-child) {
+.contact__social-link {
   margin-top: 2rem;
 }
 .contact__heading {

@@ -6,7 +6,8 @@
   &__social {
     display: flex;
     flex-direction: column;
-    &-link:not(:first-child) {
+    margin-right: 18rem;
+    &-link {
       margin-top: 2rem;
     }
   }
