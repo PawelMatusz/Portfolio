@@ -1,4 +1,6 @@
 .project {
+  display: flex;
+  flex-direction: column;
   width: 300px;
   height: 15rem;
   border: 1px solid #e7e7e7;
@@ -8,6 +10,15 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+  }
+  &__description {
+    margin-top: 0.8rem;
+  }
+  &__link {
+    margin-top: 0.8rem;
+  }
+  &__stack {
+    justify-content: flex-end;
   }
   &__more {
     display: flex;

@@ -622,6 +622,8 @@ a:hover {
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
   width: 300px;
   height: 15rem;
   border: 1px solid #e7e7e7;
@@ -632,6 +634,15 @@ a:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+.project__description {
+  margin-top: 0.8rem;
+}
+.project__link {
+  margin-top: 0.8rem;
+}
+.project__stack {
+  justify-content: flex-end;
 }
 .project__more {
   display: flex;
@@ -649,8 +660,37 @@ a:hover {
   border-radius: 10px;
 }
 
+.cv {
+  margin-top: 8rem;
+}
+.cv__heading {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.cv__content {
+  margin-top: 5rem;
+  margin-left: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.cv__content-container {
+  flex: 1;
+  text-align: left;
+}
+.cv__content-heading {
+  flex: 1;
+  font-size: 1.5rem;
+}
+.cv__content-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.cv__content-description {
+  margin-top: 1rem;
+}
+
 .contact {
-  margin-top: 2rem;
+  margin-top: 8rem;
   min-height: 40vh;
   display: flex;
   justify-content: space-between;
@@ -658,7 +698,7 @@ a:hover {
 .contact__social {
   display: flex;
   flex-direction: column;
-  margin-right: 18rem;
+  flex: 1;
 }
 .contact__social-link {
   margin-top: 2rem;
@@ -666,9 +706,11 @@ a:hover {
 .contact__heading {
   font-size: 2rem;
   line-height: 3rem;
+  flex: 1;
 }
 
 .footer {
+  margin-top: 8rem;
   text-align: center;
 }
 

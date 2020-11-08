@@ -1,0 +1,28 @@
+.cv {
+  margin-top: 8rem;
+  &__heading {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  &__content {
+    margin-top: 5rem;
+    margin-left: 3rem;
+    display: flex;
+    justify-content: space-between;
+    &-container {
+      flex: 1;
+      text-align: left;
+    }
+    &-heading {
+      flex: 1;
+      font-size: 1.5rem;
+    }
+    &-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    &-description {
+      margin-top: 1rem;
+    }
+  }
+}

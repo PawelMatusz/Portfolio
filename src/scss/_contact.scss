@@ -1,12 +1,12 @@
 .contact {
-  margin-top: 2rem;
+  margin-top: 8rem;
   min-height: 40vh;
   display: flex;
   justify-content: space-between;
   &__social {
     display: flex;
     flex-direction: column;
-    margin-right: 18rem;
+    flex: 1;
     &-link {
       margin-top: 2rem;
     }
@@ -14,5 +14,6 @@
   &__heading {
     font-size: 2rem;
     line-height: 3rem;
+    flex: 1;
   }
 }
