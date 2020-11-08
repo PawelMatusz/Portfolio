@@ -15,6 +15,7 @@
     align-items: flex-start;
     &-heading {
       font-size: 3.3rem;
+      line-height: 4rem;
     }
     &-paragraph {
       font-size: 1.3rem;
@@ -22,11 +23,15 @@
       line-height: 2rem;
     }
     &-link {
-      position: relative;
+      display: flex;
+      align-items: center;
       border: 1px solid #000;
-      padding: 0.6rem 2.5rem;
+      padding: 0.6rem 2.3rem;
       border-radius: 10px;
       margin-top: 3.1rem;
+    }
+    &-icon {
+      margin-left: 0.8rem;
     }
   }
 }

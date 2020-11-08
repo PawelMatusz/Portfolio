@@ -1,10 +1,19 @@
 .stack {
   padding: 4rem 0;
-  text-transform: uppercase;
+
+  margin-top: 8rem;
+  &__heading {
+    font-size: 2rem;
+    line-height: 3rem;
+    &-description {
+      margin-top: 1.8rem;
+    }
+  }
   &__container {
     column-count: 3;
     column-gap: 3.8rem;
-    margin-top: 1rem;
+    margin-top: 4rem;
+    text-transform: uppercase;
   }
   &__element {
     -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */

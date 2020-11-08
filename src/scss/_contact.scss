@@ -1,1 +1,17 @@
-
+.contact {
+  margin-top: 2rem;
+  min-height: 40vh;
+  display: flex;
+  justify-content: space-between;
+  &__social {
+    display: flex;
+    flex-direction: column;
+    &-link:not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
+  &__heading {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
