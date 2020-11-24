@@ -1,4 +1,5 @@
 .project {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -6,6 +7,10 @@
   border: 1px solid #e7e7e7;
   padding: 0.5em 1em;
   margin-top: 2em;
+  margin-right: 0.7em;
+  @include media(tablet) {
+    margin-right: 0;
+  }
   &__heading {
     display: flex;
     justify-content: flex-start;
@@ -13,12 +18,65 @@
   }
   &__description {
     margin-top: 0.8rem;
+    line-height: 1.2rem;
+  }
+  &__links {
+    display: flex;
+    position: absolute;
+    bottom: 18%;
   }
   &__link {
     margin-top: 0.8rem;
+    display: flex;
+    align-items: center;
+    &:not(:nth-child(2)) {
+      margin-right: 20px;
+    }
   }
   &__stack {
-    justify-content: flex-end;
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    left: 8%;
+
+    &-html,
+    &-scss,
+    &-js,
+    &-react,
+    &-css {
+      position: relative;
+      margin-right: 2em;
+    }
+    &-html::before,
+    &-scss::before,
+    &-css::before,
+    &-js::before,
+    &-react::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 50%;
+      left: -15px;
+      transform: translateY(-50%);
+      border-radius: 100%;
+      z-index: 2;
+    }
+    &-html::before {
+      background-color: #e34c26;
+    }
+    &-scss::before {
+      background-color: #c6538c;
+    }
+    &-css::before {
+      background-color: #563d7c;
+    }
+    &-js::before {
+      background-color: #f1e05a;
+    }
+    &-react::before {
+      background-color: #61dbfb;
+    }
   }
   &__more {
     display: flex;
@@ -26,6 +84,9 @@
     align-items: center;
     flex-direction: column;
     border-color: transparent;
+    @include media(tablet) {
+      margin-top: 0;
+    }
     &-link {
       display: flex;
       align-items: flex-end;

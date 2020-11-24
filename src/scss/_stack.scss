@@ -1,7 +1,9 @@
 .stack {
   padding: 4rem 0;
-
   margin-top: 8rem;
+  @include media(tablet) {
+    text-align: center;
+  }
   &__heading {
     font-size: 2rem;
     line-height: 3rem;
@@ -14,17 +16,25 @@
     column-gap: 3.8rem;
     margin-top: 4rem;
     text-transform: uppercase;
+
+    @include media(tablet) {
+      column-count: 2;
+      margin-top: 2rem;
+    }
   }
   &__element {
-    -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-    page-break-inside: avoid; /* Firefox */
-    break-inside: avoid; /* IE 10+ */
-
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
     display: flex;
     padding: 1em 0;
     align-items: center;
+    flex: 0;
     &-icon {
       margin-right: 1em;
+      @include media(tablet) {
+        margin-right: 0.5em;
+      }
     }
   }
 }

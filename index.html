@@ -90,21 +90,35 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
+      <nav class="nav" data-nav>
         <h1 class="nav__logo"><a href="">pawelmatusz.pl</a></h1>
         <ul class="nav__list">
-          <li class="nav__list-element"><a href="#work">#moje-prace</a></li>
-          <li class="nav__list-element"><a href="#stack">#tech-stack</a></li>
-          <li class="nav__list-element"><a href="#cv">#cv</a></li>
-          <li class="nav__list-element"><a href="#contact">#kontakt</a></li>
+          <li class="nav__list-element">
+            <a href="#work" data-nav-links>#moje-prace</a>
+          </li>
+          <li class="nav__list-element">
+            <a href="#stack" data-nav-links>#tech-stack</a>
+          </li>
+          <li class="nav__list-element">
+            <a href="#cv" data-nav-links>#cv</a>
+          </li>
+          <li class="nav__list-element">
+            <a href="#contact" data-nav-links>#kontakt</a>
+          </li>
         </ul>
+        <button class="nav__burger" data-burger>
+          <span class="nav__burger-element"></span>
+        </button>
       </nav>
     </header>
     <main class="main">
       <div class="wrapper">
         <section class="about">
           <div class="about__description">
-            <h2 class="about__description-heading">Cześć, jestem Paweł</h2>
+            <h2 class="about__description-heading">
+              Cześć, <br />
+              jestem Paweł
+            </h2>
             <p class="about__description-paragraph">
               Szukam pracy jako frontend developer <br />
               Pozwól, że pokażę Ci co zrobiłem
@@ -131,96 +145,86 @@
               <p class="project__description">
                 Sklep internetowy zakodowany do portfolio według projektu
                 graficznego udostępnionego w ramach weekly-webdev-challenge.
-                Strona budowana w oparciu o "czysty" JavaScript oraz z użyciem
-                bundlera Parcel.js (2 branche).
               </p>
-              <a class="project__link" href="https://github.com/PawelMatusz"
-                ><img src="./src/img/github-link.svg" alt="" />GitHub</a
-              >
+              <div class="project__links">
+                <a class="project__link" href="https://github.com/PawelMatusz"
+                  ><img src="./src/img/github-link.svg" alt="" />GitHub</a
+                >
+                <a class="project__link" href=""
+                  ><img src="./src/img/live-link.svg" alt="" />Podgląd</a
+                >
+              </div>
               <div class="project__stack">
                 <span class="project__stack-html">html</span>
-                <span class="project__stack-css">css</span>
+                <span class="project__stack-scss">scss</span>
                 <span class="project__stack-js">javascript</span>
               </div>
             </article>
             <article class="project">
               <h4 class="project__heading">
-                <img src="./src/img/icon.svg" alt="" />36 weekly webdev
-                challenge
+                <img src="./src/img/icon.svg" alt="" />Escape Website
               </h4>
               <p class="project__description">
-                Sklep internetowy zakodowany do portfolio według projektu
-                graficznego udostępnionego w ramach weekly-webdev-challenge.
-                Strona budowana w oparciu o "czysty" JavaScript oraz z użyciem
-                bundlera Parcel.js (2 branche). Projekt umieszczony na
-                platformie Netlify. Projekt wciąż rozwijany.
+                Strona internetowa One Page zakodowana według projektu
+                graficznego psd z prostymi animacjami w JS. Strona budowana
+                PixelPerfect umieszczona na platformie Netlify.
               </p>
-              <a class="project__link" href=""
-                ><img src="./src/img/github-link.svg" alt="" />GitHub</a
-              >
+              <div class="project__links">
+                <a class="project__link" href=""
+                  ><img src="./src/img/github-link.svg" alt="" />GitHub</a
+                >
+                <a class="project__link" href=""
+                  ><img src="./src/img/live-link.svg" alt="" />Podgląd</a
+                >
+              </div>
               <div class="project__stack">
                 <span class="project__stack-html">html</span>
-                <span class="project__stack-css">css</span>
+                <span class="project__stack-scss">scss</span>
                 <span class="project__stack-js">javascript</span>
               </div>
             </article>
             <article class="project">
               <h4 class="project__heading">
-                <img src="./src/img/icon.svg" alt="" />36 weekly webdev
-                challenge
+                <img src="./src/img/icon.svg" alt="" />Weather App
               </h4>
               <p class="project__description">
-                Sklep internetowy zakodowany do portfolio według projektu
-                graficznego udostępnionego w ramach weekly-webdev-challenge.
-                Strona budowana w oparciu o "czysty" JavaScript oraz z użyciem
-                bundlera Parcel.js (2 branche). Projekt umieszczony na
-                platformie Netlify. Projekt wciąż rozwijany.
+                Pierwsza aplikacja w React budowana na kursie jednym z kursów.
               </p>
-              <a class="project__link" href=""
-                ><img src="./src/img/github-link.svg" alt="" />GitHub</a
-              >
+              <div class="project__links">
+                <a
+                  class="project__link"
+                  href="https://github.com/PawelMatusz/weather-App"
+                  ><img src="./src/img/github-link.svg" alt="" />GitHub</a
+                >
+                <a
+                  class="project__link"
+                  href="https://pawelmatusz.github.io/weather-App/"
+                  ><img src="./src/img/live-link.svg" alt="" />Podgląd</a
+                >
+              </div>
               <div class="project__stack">
-                <span class="project__stack-html">html</span>
-                <span class="project__stack-css">css</span>
-                <span class="project__stack-js">javascript</span>
+                <span class="project__stack-react">React</span>
               </div>
             </article>
             <article class="project">
               <h4 class="project__heading">
-                <img src="./src/img/icon.svg" alt="" />36 weekly webdev
-                challenge
+                <img src="./src/img/icon.svg" alt="" />Hangman
               </h4>
               <p class="project__description">
-                Sklep internetowy zakodowany do portfolio według projektu
-                graficznego udostępnionego w ramach weekly-webdev-challenge.
-                Strona budowana w oparciu o "czysty" JavaScript oraz z użyciem
-                bundlera Parcel.js (2 branche). Projekt umieszczony na
-                platformie Netlify. Projekt wciąż rozwijany.
+                Prosta gra "Wisielec", budowana OOP podczas jednego z kursów.
               </p>
-              <a class="project__link" href=""
-                ><img src="./src/img/github-link.svg" alt="" />GitHub</a
-              >
-              <div class="project__stack">
-                <span class="project__stack-html">html</span>
-                <span class="project__stack-css">css</span>
-                <span class="project__stack-js">javascript</span>
+              <div class="project__links">
+                <a
+                  class="project__link"
+                  href="https://github.com/PawelMatusz/Hangman"
+                  ><img src="./src/img/github-link.svg" alt="" />GitHub</a
+                >
+                <a
+                  class="project__link"
+                  href="https://pawelmatusz.github.io/Hangman/"
+                  ><img src="./src/img/live-link.svg" alt="" />Podgląd</a
+                >
               </div>
-            </article>
-            <article class="project">
-              <h4 class="project__heading">
-                <img src="./src/img/icon.svg" alt="" />36 weekly webdev
-                challenge
-              </h4>
-              <p class="project__description">
-                Sklep internetowy zakodowany do portfolio według projektu
-                graficznego udostępnionego w ramach weekly-webdev-challenge.
-                Strona budowana w oparciu o "czysty" JavaScript oraz z użyciem
-                bundlera Parcel.js (2 branche). Projekt umieszczony na
-                platformie Netlify. Projekt wciąż rozwijany.
-              </p>
-              <a class="project__link" href=""
-                ><img src="./src/img/github-link.svg" alt="" />GitHub</a
-              >
               <div class="project__stack">
                 <span class="project__stack-html">html</span>
                 <span class="project__stack-css">css</span>
@@ -237,7 +241,7 @@
             </article>
           </div>
         </section>
-        <section class="stack">
+        <section class="stack" id="stack">
           <h3 class="stack__heading">#tech-stack</h3>
           <p class="stack__heading-description">
             Technologie z którymi miałem doczynienia
@@ -357,7 +361,7 @@
             </article>
           </div>
         </section>
-        <section class="cv">
+        <section class="cv" id="cv">
           <h3 class="cv__heading">#cv</h3>
           <div class="cv__container">
             <article class="cv__content">
@@ -375,7 +379,7 @@
               <h4 class="cv__content-heading">Języki</h4>
               <div class="cv__content-container">
                 <p class="cv__content-name">Angielski</p>
-                <p class="cv__content-description">B1/B2</p>
+                <p class="cv__content-description">B1</p>
               </div>
             </article>
             <article class="cv__content">
@@ -388,7 +392,7 @@
             </article>
           </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
           <h3 class="contact__heading">#kontakt</h3>
           <article class="contact__social">
             <a
@@ -410,7 +414,7 @@
               ><img
                 src="./src/img/mail-icon.svg"
                 alt=""
-              />pawel.matusz94@gmail.com</a
+              />/pawel.matusz94@gmail.com</a
             >
           </article>
         </section>

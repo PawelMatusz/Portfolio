@@ -4,8 +4,13 @@
   flex: 0;
   justify-content: space-between;
   align-items: center;
-  &__container {
-    display: flex;
+  @include media(tablet) {
+    flex-direction: column-reverse;
+  }
+  &__img {
+    @include media(tablet) {
+      width: 30%;
+    }
   }
   &__description {
     align-self: center;
@@ -13,14 +18,26 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    @include media(tablet) {
+      align-items: center;
+      text-align: center;
+    }
     &-heading {
       font-size: 3.3rem;
       line-height: 4rem;
+      @include media(tablet) {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
     }
     &-paragraph {
       font-size: 1.3rem;
       margin-top: 2.5rem;
       line-height: 2rem;
+      @include media(tablet) {
+        font-size: 1.1rem;
+        margin-top: 1.8rem;
+      }
     }
     &-link {
       display: flex;
@@ -29,6 +46,9 @@
       padding: 0.6rem 2.3rem;
       border-radius: 10px;
       margin-top: 3.1rem;
+      @include media(tablet) {
+        margin-top: 2.2rem;
+      }
     }
     &-icon {
       margin-left: 0.8rem;

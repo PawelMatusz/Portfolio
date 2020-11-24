@@ -13,8 +13,15 @@
   max-width: 1040px;
   margin: 0 auto;
 }
+body {
+  overflow-x: hidden;
+  @include media(tablet) {
+    padding: 2px;
+  }
+}
 html {
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 h1,
 h2,

@@ -1,5 +1,9 @@
 .cv {
   margin-top: 8rem;
+  @include media(tablet) {
+    text-align: center;
+    margin-top: 1rem;
+  }
   &__heading {
     font-size: 2rem;
     line-height: 3rem;
@@ -9,9 +13,17 @@
     margin-left: 3rem;
     display: flex;
     justify-content: space-between;
+    @include media(tablet) {
+      flex-direction: column;
+      text-align: center;
+      margin-left: 0;
+    }
     &-container {
       flex: 1;
       text-align: left;
+      @include media(tablet) {
+        text-align: center;
+      }
     }
     &-heading {
       flex: 1;
@@ -20,9 +32,15 @@
     &-name {
       font-size: 1.25rem;
       font-weight: 700;
+      @include media(tablet) {
+        margin-top: 2rem;
+      }
     }
     &-description {
       margin-top: 1rem;
+    }
+    &-list {
+      line-height: 1.3rem;
     }
   }
 }

@@ -3,6 +3,16 @@
   min-height: 40vh;
   display: flex;
   justify-content: space-between;
+  @include media(tablet) {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 6rem;
+  }
+  &__heading {
+    font-size: 2rem;
+    line-height: 3rem;
+    flex: 1;
+  }
   &__social {
     display: flex;
     flex-direction: column;
@@ -10,10 +20,5 @@
     &-link {
       margin-top: 2rem;
     }
-  }
-  &__heading {
-    font-size: 2rem;
-    line-height: 3rem;
-    flex: 1;
   }
 }
