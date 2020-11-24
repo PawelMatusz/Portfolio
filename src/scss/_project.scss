@@ -96,4 +96,13 @@
       border-radius: 10px;
     }
   }
+
+  &.aron {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .aron-photo {
+    border-radius: 100%;
+    flex: none;
+  }
 }
