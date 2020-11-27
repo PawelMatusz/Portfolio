@@ -8,20 +8,20 @@
 //     color: #809fff;
 //   }
 // }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 .wrapper {
   width: 100%;
-  max-width: 1040px;
+  max-width: 64.3rem;
   margin: 0 auto;
-}
-body {
-  overflow-x: hidden;
-  @include media(tablet) {
-    padding: 0 3px;
-  }
 }
 html {
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 h1,
 h2,

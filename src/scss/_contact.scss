@@ -6,11 +6,11 @@
   @include media(tablet) {
     flex-direction: column;
     text-align: center;
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
   &__heading {
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 1.2;
     flex: 1;
   }
   &__social {

@@ -1,3 +1,6 @@
 .main {
   padding-top: 10rem;
+  @include media(tablet) {
+    padding: 8rem 1rem 0 1rem;
+  }
 }
