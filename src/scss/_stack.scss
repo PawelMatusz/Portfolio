@@ -30,6 +30,9 @@
     padding: 1em 0;
     align-items: center;
     flex: 0;
+    @include media(tablet) {
+      display: block;
+    }
     &-icon {
       margin-right: 1em;
       @include media(tablet) {

@@ -16,7 +16,7 @@
 body {
   overflow-x: hidden;
   @include media(tablet) {
-    padding: 2px;
+    padding: 0 3px;
   }
 }
 html {

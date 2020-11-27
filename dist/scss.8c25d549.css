@@ -488,7 +488,7 @@ body {
 }
 @media only screen and (max-width: 1035px) {
   body {
-    padding: 2px;
+    padding: 0 3px;
   }
 }
 
@@ -552,6 +552,11 @@ a:hover {
   align-items: center;
   flex: 0;
 }
+@media only screen and (max-width: 1035px) {
+  .stack__element {
+    display: block;
+  }
+}
 .stack__element-icon {
   margin-right: 1em;
 }
@@ -572,12 +577,11 @@ a:hover {
 
 .nav {
   width: 100%;
-  max-width: 1280px;
+  max-width: 80rem;
   height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
 }
 @media only screen and (max-width: 1035px) {
   .nav__logo {
@@ -624,7 +628,7 @@ a:hover {
 @media only screen and (max-width: 1035px) {
   .nav__burger {
     display: block;
-    margin-right: 3rem;
+    margin-right: 2rem;
   }
 }
 .nav__burger-element {
@@ -641,13 +645,13 @@ a:hover {
   content: "";
   position: absolute;
   z-index: 1;
-  top: -8px;
+  top: -0.5rem;
   width: 100%;
   height: 2px;
   background: inherit;
 }
 .nav__burger-element::after {
-  top: 8px;
+  top: 0.5rem;
   transform: translateX(50%);
 }
 .nav__burger-element::before {
@@ -907,6 +911,7 @@ a:hover {
 }
 .cv__content-list {
   line-height: 1.3rem;
+  margin-top: 0.6rem;
 }
 
 .contact {
