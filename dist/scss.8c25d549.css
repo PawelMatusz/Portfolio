@@ -488,6 +488,11 @@ template {
   max-width: 64.3rem;
   margin: 0 auto;
 }
+@media only screen and (max-width: 1035px) {
+  .wrapper {
+    padding: 0 1rem;
+  }
+}
 
 html {
   font-family: "Roboto", sans-serif;
@@ -592,9 +597,13 @@ a:hover {
   align-items: center;
   margin: 0 auto;
 }
+.nav__logo {
+  position: relative;
+  z-index: 10;
+}
 @media only screen and (max-width: 1035px) {
   .nav__logo {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 }
 .nav__list {
@@ -612,7 +621,7 @@ a:hover {
 }
 .is-open .nav__list {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -621,7 +630,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   background-color: #fff;
-  z-index: 3;
+  z-index: 4;
 }
 .nav__burger {
   position: relative;
@@ -657,6 +666,7 @@ a:hover {
   width: 100%;
   height: 2px;
   background: inherit;
+  transition: transform 0.1s ease-in-out;
 }
 .nav__burger-element::after {
   top: 0.5rem;
@@ -665,14 +675,12 @@ a:hover {
 .nav__burger-element::before {
   transform: translateX(-50%);
 }
+.is-open ~ .nav__burger > .nav__burger-element::before, .is-open ~ .nav__burger > .nav__burger-element::after {
+  transform: translate(0);
+}
 
 .main {
   padding-top: 10rem;
-}
-@media only screen and (max-width: 1035px) {
-  .main {
-    padding: 8rem 1rem 0 1rem;
-  }
 }
 
 .about {
@@ -772,8 +780,8 @@ a:hover {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 18.5rem;
-  height: 15rem;
+  width: 20.5rem;
+  min-height: 17rem;
   border: 1px solid #e7e7e7;
   padding: 0.5em 1em;
   margin-top: 2em;

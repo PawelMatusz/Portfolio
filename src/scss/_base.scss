@@ -17,6 +17,9 @@
   width: 100%;
   max-width: 64.3rem;
   margin: 0 auto;
+  @include media(tablet) {
+    padding: 0 1rem;
+  }
 }
 html {
   font-family: 'Roboto', sans-serif;
