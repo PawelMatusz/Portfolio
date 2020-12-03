@@ -1,5 +1,7 @@
 .header {
-  max-width: 90rem;
+  & .wrapper {
+    max-width: 130rem;
+  }
   position: fixed;
   top: 0;
   left: 0;

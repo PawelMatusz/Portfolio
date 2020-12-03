@@ -1,8 +1,8 @@
 .projects {
   width: 100%;
-  margin-top: 8rem;
+  margin-top: 20rem;
   &__heading {
-    font-size: 2rem;
+    font-size: 3.2rem;
     line-height: 1.5;
     @include media(tablet) {
       text-align: center;
@@ -11,8 +11,8 @@
   &__container {
     display: flex;
     flex-wrap: wrap;
-    min-height: 80vh;
-    justify-content: flex-start;
+    justify-content: space-between;
+    margin-top: 4.5rem;
     @include media(tablet) {
       justify-content: space-evenly;
     }

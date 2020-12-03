@@ -1,15 +1,15 @@
 .cv {
-  margin-top: 8rem;
+  margin-top: 16rem;
   @include media(tablet) {
     text-align: center;
     margin-top: 4rem;
   }
   &__heading {
-    font-size: 2rem;
+    font-size: 3.2rem;
     line-height: 1.2;
   }
   &__content {
-    margin-top: 5rem;
+    margin-top: 8.5rem;
     margin-left: 3rem;
     display: flex;
     justify-content: space-between;
@@ -28,10 +28,10 @@
     }
     &-heading {
       flex: 1;
-      font-size: 1.5rem;
+      font-size: 2.4rem;
     }
     &-name {
-      font-size: 1.25rem;
+      font-size: 2rem;
       font-weight: 700;
       @include media(tablet) {
         margin-top: 2rem;
@@ -39,10 +39,12 @@
     }
     &-description {
       margin-top: 1rem;
+      font-size: 1.6rem;
     }
     &-list {
       line-height: 1.2;
       margin-top: 0.6rem;
+      font-size: 1.6rem;
     }
   }
 }

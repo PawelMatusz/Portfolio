@@ -82,6 +82,7 @@
       content="./favicon.ico/ms-icon-144x144.png"
     />
     <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -90,6 +91,7 @@
   </head>
   <body>
     <header class="header">
+      <div class="wrapper">
       <nav class="nav" data-nav>
         <h1 class="nav__logo nav__logo--mobile">
           <a href="http://pawelmatusz.pl/">pawelmatusz.pl</a>
@@ -112,10 +114,11 @@
       <button class="nav__burger" aria-label="nav button" data-burger>
         <span class="nav__burger-element"></span>
       </button>
+    </div>
     </header>
     <main class="main">
-      <div class="wrapper">
-        <section class="about">
+      <section class="about">
+        <div class="wrapper">
           <div class="about__description">
             <h2 class="about__description-heading">
               Cześć, <br />
@@ -135,302 +138,320 @@
           <div class="about__img">
             <img src="./src/img/pawel.png" alt="" />
           </div>
-        </section>
-        <section class="projects" id="work">
-          <h3 class="projects__heading">#moje-projekty</h3>
-          <div class="projects__container">
-            <article class="project">
-              <h4 class="project__heading">
-                <img src="./src/img/icon.svg" alt="" />36 weekly webdev
-                challenge
-              </h4>
-              <p class="project__description">
-                Sklep internetowy zakodowany do portfolio według projektu
-                graficznego udostępnionego w ramach weekly-webdev-challenge.
-              </p>
-              <div class="project__links">
-                <a
-                  class="project__link"
-                  href="https://github.com/PawelMatusz/36-week-challenge-shop"
-                  ><img src="./src/img/github-link.svg" alt="" />GitHub</a
-                >
-                <a
-                  class="project__link"
-                  href="https://wizardly-archimedes-6a4104.netlify.app/"
-                  ><img src="./src/img/live-link.svg" alt="" />Podgląd</a
-                >
-              </div>
-              <div class="project__stack">
-                <span class="project__stack-html">html</span>
-                <span class="project__stack-scss">scss</span>
-                <span class="project__stack-js">javascript</span>
-              </div>
-            </article>
-            <article class="project">
-              <h4 class="project__heading">
-                <img src="./src/img/icon.svg" alt="" />Escape Website
-              </h4>
-              <p class="project__description">
-                Strona internetowa One Page zakodowana według projektu
-                graficznego psd z prostymi animacjami w JS. Strona budowana
-                PixelPerfect umieszczona na platformie Netlify.
-              </p>
-              <div class="project__links">
-                <a
-                  class="project__link"
-                  href="https://github.com/PawelMatusz/Escape-Website"
-                  ><img src="./src/img/github-link.svg" alt="" />GitHub</a
-                >
-                <a
-                  class="project__link"
-                  href="https://determined-mahavira-a16418.netlify.app/"
-                  ><img src="./src/img/live-link.svg" alt="" />Podgląd</a
-                >
-              </div>
-              <div class="project__stack">
-                <span class="project__stack-html">html</span>
-                <span class="project__stack-scss">scss</span>
-                <span class="project__stack-js">javascript</span>
-              </div>
-            </article>
-            <article class="project">
-              <h4 class="project__heading">
-                <img src="./src/img/icon.svg" alt="" />Weather App
-              </h4>
-              <p class="project__description">
-                Pierwsza aplikacja w React budowana na kursie jednym z kursów.
-              </p>
-              <div class="project__links">
-                <a
-                  class="project__link"
-                  href="https://github.com/PawelMatusz/weather-App"
-                  ><img src="./src/img/github-link.svg" alt="" />GitHub</a
-                >
-                <a
-                  class="project__link"
-                  href="https://pawelmatusz.github.io/weather-App/"
-                  ><img src="./src/img/live-link.svg" alt="" />Podgląd</a
-                >
-              </div>
-              <div class="project__stack">
-                <span class="project__stack-react">React</span>
-              </div>
-            </article>
-            <article class="project">
-              <h4 class="project__heading">
-                <img src="./src/img/icon.svg" alt="" />Hangman
-              </h4>
-              <p class="project__description">
-                Prosta gra "Wisielec", budowana OOP podczas jednego z kursów.
-              </p>
-              <div class="project__links">
-                <a
-                  class="project__link"
-                  href="https://github.com/PawelMatusz/Hangman"
-                  ><img src="./src/img/github-link.svg" alt="" />GitHub</a
-                >
-                <a
-                  class="project__link"
-                  href="https://pawelmatusz.github.io/Hangman/"
-                  ><img src="./src/img/live-link.svg" alt="" />Podgląd</a
-                >
-              </div>
-              <div class="project__stack">
-                <span class="project__stack-html">html</span>
-                <span class="project__stack-css">css</span>
-                <span class="project__stack-js">javascript</span>
-              </div>
-            </article>
-            <article class="project project__more">
-              <h4 class="project__more-heading">
-                Więcej na:
-              </h4>
-              <a class="project__more-link" href="#work"
-                ><img src="./src/img/github-link.svg" alt="" />/pawelmatusz</a
+        </div>
+      </section>
+      <section class="projects" id="work">
+        <div class="wrapper">
+        <h3 class="projects__heading">#moje-projekty</h3>
+        <div class="projects__container">
+          <article class="project">
+            <h4 class="project__heading">
+              <img src="./src/img/icon.svg" alt="" /> #36 weekly challenge
+            </h4>
+            <p class="project__description">
+              Sklep internetowy zakodowany do portfolio według projektu
+              graficznego udostępnionego w ramach weekly-webdev-challenge.
+            </p>
+            <div class="project__links">
+              <a
+                class="project__link"
+                href="https://github.com/PawelMatusz/36-week-challenge-shop"
+                ><img class="project__link-icon" src="./src/img/github-link.svg" alt="" />GitHub</a
               >
-            </article>
-          </div>
-        </section>
-        <section class="stack" id="stack">
-          <h3 class="stack__heading">#tech-stack</h3>
-          <p class="stack__heading-description">
-            Technologie z którymi miałem doczynienia
-          </p>
-          <div class="stack__container">
-            <article class="stack__element">
-              <img
-                class="stack__element-icon"
-                src="./src/img/html-icon.png"
-                alt=""
-              />
-              <p>html</p>
-            </article>
-            <article class="stack__element">
-              <img
-                class="stack__element-icon"
-                src="./src/img/css-icon.png"
-                alt=""
-              />
-              <p>css</p>
-            </article>
-            <article class="stack__element">
-              <img
-                class="stack__element-icon"
-                src="./src/img/js-icon.png"
-                alt=""
-              />
-              <p>javascript</p>
-            </article>
-            <article class="stack__element">
-              <img
-                class="stack__element-icon"
-                src="./src/img/react-icon.png"
-                alt=""
-              />
-              <p>react</p>
-            </article>
-            <article class="stack__element">
-              <img
-                class="stack__element-icon"
-                src="./src/img/redux-icon.png"
-                alt=""
-              />
-              <p>redux</p>
-            </article>
-            <article class="stack__element">
-              <img
-                class="stack__element-icon"
-                src="./src/img/gatsby-icon.png"
-                alt=""
-              />
-              <p>gatsby</p>
-            </article>
-            <article class="stack__element">
-              <img
-                class="stack__element-icon"
-                src="./src/img/git-icon.png"
-                alt=""
-              />
-              <p>git</p>
-            </article>
-            <article class="stack__element">
-              <img
-                class="stack__element-icon"
-                src="./src/img/github-icon.png"
-                alt=""
-              />
-              <p>github</p>
-            </article>
-            <article class="stack__element">
-              <img
-                class="stack__element-icon"
-                src="./src/img/sass-icon.png"
-                alt=""
-              />
-              <p>sass</p>
-            </article>
-            <article class="stack__element">
-              <img
-                class="stack__element-icon"
-                src="./src/img/json-icon.png"
-                alt=""
-              />
-              <p>json</p>
-            </article>
-            <article class="stack__element">
-              <img
-                class="stack__element-icon"
-                src="./src/img/netlify-icon.png"
-                alt=""
-              />
-              <p>netlify</p>
-            </article>
-            <article class="stack__element">
-              <img
-                class="stack__element-icon"
-                src="./src/img/graphql-icon.png"
-                alt=""
-              />
-              <p>graphql</p>
-            </article>
-            <article class="stack__element">
-              <img
-                class="stack__element-icon"
-                src="./src/img/figma-icon.png"
-                alt=""
-              />
-              <p>figma</p>
-            </article>
-            <article class="stack__element">
-              <img
-                class="stack__element-icon"
-                src="./src/img/ts-icon.png"
-                alt=""
-              />
-              <p>typescript</p>
-            </article>
-          </div>
-        </section>
-        <section class="cv" id="cv">
-          <h3 class="cv__heading">#cv</h3>
-          <div class="cv__container">
-            <article class="cv__content">
-              <h4 class="cv__content-heading">Edukacja</h4>
-              <div class="cv__content-container">
-                <p class="cv__content-name">
-                  Uniwersytet Pedagogiczny w Krakowie
-                </p>
-                <p class="cv__content-description">
-                  Turystyka i Rekreacja | 2014-2017
-                </p>
-              </div>
-            </article>
-            <article class="cv__content">
-              <h4 class="cv__content-heading">Języki</h4>
-              <div class="cv__content-container">
-                <p class="cv__content-name">Angielski</p>
-                <p class="cv__content-description">B1</p>
-              </div>
-            </article>
-            <article class="cv__content">
-              <h4 class="cv__content-heading">Zainteresowania</h4>
-              <ul class="cv__content-container">
-                <li class="cv__content-list">Air Soft</li>
-                <li class="cv__content-list">Programowanie</li>
-                <li class="cv__content-list">Podróze</li>
-              </ul>
-            </article>
-          </div>
-        </section>
-        <section class="contact" id="contact">
-          <h3 class="contact__heading">#kontakt</h3>
-          <article class="contact__social">
-            <a
-              class="contact__social-link"
-              href="https://github.com/PawelMatusz"
+              <a
+                class="project__link"
+                href="https://wizardly-archimedes-6a4104.netlify.app/"
+                ><img class="project__link-icon" src="./src/img/live-link.svg" alt="" />Podgląd</a
+              >
+            </div>
+            <div class="project__stack">
+              <span class="project__stack-html">html</span>
+              <span class="project__stack-scss">scss</span>
+              <span class="project__stack-js">javascript</span>
+            </div>
+          </article>
+          <article class="project">
+            <h4 class="project__heading">
+              <img src="./src/img/icon.svg" alt="" /> Escape Website
+            </h4>
+            <p class="project__description">
+              Strona internetowa One Page zakodowana według projektu graficznego
+              psd z prostymi animacjami w JS.
+            </p>
+            <div class="project__links">
+              <a
+                class="project__link"
+                href="https://github.com/PawelMatusz/Escape-Website"
+                ><img class="project__link-icon" src="./src/img/github-link.svg" alt="" />GitHub</a
+              >
+              <a
+                class="project__link"
+                href="https://determined-mahavira-a16418.netlify.app/"
+                ><img class="project__link-icon" src="./src/img/live-link.svg" alt="" />Podgląd</a
+              >
+            </div>
+            <div class="project__stack">
+              <span class="project__stack-html">html</span>
+              <span class="project__stack-scss">scss</span>
+              <span class="project__stack-js">javascript</span>
+            </div>
+          </article>
+          <article class="project">
+            <h4 class="project__heading">
+              <img src="./src/img/icon.svg" alt="" /> Weather App
+            </h4>
+            <p class="project__description">
+              Pierwsza aplikacja w React budowana na kursie jednym z kursów.
+            </p>
+            <div class="project__links">
+              <a
+                class="project__link"
+                href="https://github.com/PawelMatusz/weather-App"
+                ><img class="project__link-icon" src="./src/img/github-link.svg" alt="" />GitHub</a
+              >
+              <a
+                class="project__link"
+                href="https://pawelmatusz.github.io/weather-App/"
+                ><img class="project__link-icon" src="./src/img/live-link.svg" alt="" />Podgląd</a
+              >
+            </div>
+            <div class="project__stack">
+              <span class="project__stack-react">react</span>
+            </div>
+          </article>
+          <article class="project">
+            <h4 class="project__heading">
+              <img src="./src/img/icon.svg" alt="" /> Hangman
+            </h4>
+            <p class="project__description">
+              Prosta gra "Wisielec", budowana OOP podczas jednego z kursów.
+            </p>
+            <div class="project__links">
+              <a
+                class="project__link"
+                href="https://github.com/PawelMatusz/Hangman"
+                ><img class="project__link-icon" src="./src/img/github-link.svg" alt="" />GitHub</a
+              >
+              <a
+                class="project__link"
+                href="https://pawelmatusz.github.io/Hangman/"
+                ><img class="project__link-icon" src="./src/img/live-link.svg" alt="" />Podgląd</a
+              >
+            </div>
+            <div class="project__stack">
+              <span class="project__stack-html">html</span>
+              <span class="project__stack-css">css</span>
+              <span class="project__stack-js">javascript</span>
+            </div>
+          </article>
+          <article class="project project__more">
+            <h4 class="project__more-heading">
+              Więcej na:
+            </h4>
+            <a class="project__more-link" href="#work"
               ><img src="./src/img/github-link.svg" alt="" />/pawelmatusz</a
             >
-            <a
-              class="contact__social-link"
-              href="https://www.linkedin.com/in/pawel-matusz/"
-              ><img
-                src="./src/img/linkedin-icon.svg"
-                alt=""
-              />/in/pawel-matusz</a
-            >
-            <a
-              class="contact__social-link"
-              href="mailto:pawel.matusz94@gmail.com"
-              ><img
-                src="./src/img/mail-icon.svg"
-                alt=""
-              />/pawel.matusz94@gmail.com</a
-            >
           </article>
-        </section>
+        </div>
+      </section>
+      <section class="stack" id="stack">
+        <div class="wrapper">
+        <h3 class="stack__heading">#tech-stack</h3>
+        <p class="stack__heading-description">
+          Technologie z którymi miałem doczynienia
+        </p>
+        <div class="stack__container">
+          <article class="stack__element">
+            <img
+              class="stack__element-icon"
+              src="./src/img/html-icon.svg"
+              alt=""
+            />
+            <p>html</p>
+          </article>
+          <article class="stack__element">
+            <img
+              class="stack__element-icon"
+              src="./src/img/css-icon.svg"
+              alt=""
+            />
+            <p>css</p>
+          </article>
+          <article class="stack__element">
+            <img
+              class="stack__element-icon"
+              src="./src/img/js-icon.svg"
+              alt=""
+            />
+            <p>javascript</p>
+          </article>
+          <article class="stack__element">
+            <img
+              class="stack__element-icon"
+              src="./src/img/react-icon.svg"
+              alt=""
+            />
+            <p>react</p>
+          </article>
+          <article class="stack__element">
+            <img
+              class="stack__element-icon"
+              src="./src/img/redux-icon.svg"
+              alt=""
+            />
+            <p>redux</p>
+          </article>
+          <article class="stack__element">
+            <img
+              class="stack__element-icon"
+              src="./src/img/gatsby-icon.svg"
+              alt=""
+            />
+            <p>gatsby</p>
+          </article>
+          <article class="stack__element">
+            <img
+              class="stack__element-icon"
+              src="./src/img/git-icon.svg"
+              alt=""
+            />
+            <p>git</p>
+          </article>
+          <article class="stack__element">
+            <img
+              class="stack__element-icon"
+              src="./src/img/github-icon.svg"
+              alt=""
+            />
+            <p>github</p>
+          </article>
+          <article class="stack__element">
+            <img
+              class="stack__element-icon"
+              src="./src/img/sass-icon.svg"
+              alt=""
+            />
+            <p>sass</p>
+          </article>
+          <article class="stack__element">
+            <img
+              class="stack__element-icon"
+              src="./src/img/json-icon.svg"
+              alt=""
+            />
+            <p>json</p>
+          </article>
+          <article class="stack__element">
+            <img
+              class="stack__element-icon"
+              src="./src/img/netlify-icon.svg"
+              alt=""
+            />
+            <p>netlify</p>
+          </article>
+          <article class="stack__element">
+            <img
+              class="stack__element-icon"
+              src="./src/img/graphql-icon.svg"
+              alt=""
+            />
+            <p>graphql</p>
+          </article>
+          <article class="stack__element">
+            <img
+              class="stack__element-icon"
+              src="./src/img/figma-icon.svg"
+              alt=""
+            />
+            <p>figma</p>
+          </article>
+          <article class="stack__element">
+            <img
+              class="stack__element-icon"
+              src="./src/img/ts-icon.svg"
+              alt=""
+            />
+            <p>typescript</p>
+          </article>
+          <article class="stack__element">
+            <img
+              class="stack__element-icon"
+              src="./src/img/npm-icon.svg"
+              alt=""
+            />
+            <p>npm</p>
+          </article>
+          <article class="stack__element">
+            <img
+              class="stack__element-icon"
+              src="./src/img/webpack-icon.svg"
+              alt=""
+            />
+            <p>webpack</p>
+          </article>
+        </div>
       </div>
+      </section>
+      <section class="cv" id="cv">
+        <div class="wrapper">
+        <h3 class="cv__heading">#cv</h3>
+        <div class="cv__container">
+          <article class="cv__content">
+            <h4 class="cv__content-heading">Edukacja</h4>
+            <div class="cv__content-container">
+              <p class="cv__content-name">
+                Uniwersytet Pedagogiczny w Krakowie
+              </p>
+              <p class="cv__content-description">
+                Turystyka i Rekreacja | 2014-2017
+              </p>
+            </div>
+          </article>
+          <article class="cv__content">
+            <h4 class="cv__content-heading">Języki</h4>
+            <div class="cv__content-container">
+              <p class="cv__content-name">Angielski</p>
+              <p class="cv__content-description">B1</p>
+            </div>
+          </article>
+          <article class="cv__content">
+            <h4 class="cv__content-heading">Zainteresowania</h4>
+            <ul class="cv__content-container">
+              <li class="cv__content-list">Air Soft</li>
+              <li class="cv__content-list">Programowanie</li>
+              <li class="cv__content-list">Podróze</li>
+            </ul>
+          </article>
+        </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="wrapper">
+        <h3 class="contact__heading">#kontakt</h3>
+        <article class="contact__social">
+          <a class="contact__social-link" href="https://github.com/PawelMatusz"
+            ><img src="./src/img/github-link.svg" alt="" /> /pawelmatusz</a
+          >
+          <a
+            class="contact__social-link"
+            href="https://www.linkedin.com/in/pawel-matusz/"
+            ><img src="./src/img/linkedin-icon.svg" alt="" /> /in/pawel-matusz</a
+          >
+          <a class="contact__social-link" href="mailto:pawel.matusz94@gmail.com"
+            ><img
+              src="./src/img/mail-icon.svg"
+              alt=""
+            /> /pawel.matusz94@gmail.com</a
+          >
+        </article>
+        </div>
+      </section>
     </main>
-    <footer class="footer"><p>&copy; 11111100100</p></footer>
+    <footer class="footer">
+      <div class="wrapper">
+      <p>&copy; 11111100100</p>
+    </div>
+    </footer>
     <script src="./src/js/index.js"></script>
   </body>
 </html>
