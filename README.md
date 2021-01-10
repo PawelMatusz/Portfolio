@@ -8,7 +8,7 @@
 
 ## General info
 
-Simply portfolio website
+Simply portfolio website - In progress
 
 ## Technologies
 
